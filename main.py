@@ -92,7 +92,6 @@ def travelling_salesman_problem(path, graph):
 
 tsp_arr = read_file(tsp_path)
 tsp_list, number_of_nodes = sort_file(tsp_arr)
-source_node = random.randint(0, number_of_nodes-1)
 nodes_graph = turn_list_into_graph(tsp_list, number_of_nodes)
 starting_path = [i for i in range(number_of_nodes)]
 random.shuffle(starting_path)
